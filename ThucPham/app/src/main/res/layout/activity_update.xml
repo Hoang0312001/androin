@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Cập nhật thông tin Thực Phẩm"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:text="Tên tp: "></TextView>
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvname"></EditText>
+
+
+    <TextView
+        android:id="@+id/tvdvt"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="DVT: "></TextView>
+
+    <EditText
+        android:id="@+id/edtdvt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvname"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvdvt"></EditText>
+    <TextView
+        android:id="@+id/tvdongia"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvdvt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="ĐƠN Gía: "></TextView>
+
+    <EditText
+        android:id="@+id/edtdongia"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvdvt"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvdongia"></EditText>
+
+
+    <LinearLayout
+        android:id="@+id/listBtn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/tvdongia">
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_marginLeft="5dp"
+            ></Button>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:layout_marginLeft="5dp"
+            ></Button>
+    </LinearLayout>
+
+</RelativeLayout>

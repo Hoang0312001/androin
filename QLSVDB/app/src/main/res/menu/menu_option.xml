@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Thêm"
+        android:id="@+id/mnu_add" />
+    <item
+        android:id="@+id/mnu_update"
+        android:title="Update">
+        <menu>
+            <item
+                android:id="@+id/update_name"
+                android:title="Update Name" />
+            <item
+                android:id="@+id/update_id"
+                android:title="Update ID" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mnu_del"
+        android:title="Delete" />
+    <item
+        android:id="@+id/mnu_list"
+        android:title="List" />
+</menu>

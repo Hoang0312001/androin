@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Quản Lý Vận Tải"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/edtbks"
+        android:layout_below="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Biển Kiểm Soát"></EditText>
+    <EditText
+        android:id="@+id/edttenchuxe"
+        android:layout_below="@+id/edtbks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Chủ Xe"></EditText>
+
+    <EditText
+        android:id="@+id/edthangxe"
+        android:layout_below="@+id/edttenchuxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hãng Xe"></EditText>
+
+    <EditText
+        android:id="@+id/edttrongtai"
+        android:layout_below="@+id/edthangxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trọng Tải (Kiểu Số)"></EditText>
+
+    <EditText
+        android:id="@+id/edthinhthuckd"
+        android:layout_below="@+id/edttrongtai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hình Thức Kinh Doanh"></EditText>
+
+    <LinearLayout
+        android:id="@+id/listBtn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edthinhthuckd">
+
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginLeft="5dp"
+            ></Button>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_marginLeft="5dp"
+            ></Button>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xóa"
+            android:layout_marginLeft="5dp"
+            ></Button>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thoát"
+            android:layout_marginLeft="5dp"
+            ></Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvvantai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listBtn"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
